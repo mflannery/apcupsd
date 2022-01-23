@@ -5,25 +5,25 @@ From - http://www.apcupsd.org/
 Install apcupsd:
 
 ```
-  $ sudo dnf install apcupsd
+  sudo dnf install apcupsd
 ```
 
 Start apcupsd:
 
 ```
-  $ sudo systemctl enable --now apcupsd.service
+  sudo systemctl enable --now apcupsd.service
 ```
 
 Verify apcupsd is running with:
 
 ```
-  $ sudo systemctl status apcupsd.service
+  sudo systemctl status apcupsd.service
 ```
 
 You should see output similar to the following:
 
 ```
-  $ sudo systemctl status apcupsd.service 
+  sudo systemctl status apcupsd.service 
 ```  
 ```
   ● apcupsd.service - APC UPS Power Control Daemon for Linux
@@ -41,7 +41,7 @@ You should see output similar to the following:
 Now that apcupsd is running check the status:
 
 ```
-    $ apcaccess status
+    apcaccess status
 ```
 ```
     APC      : 001,036,0879
