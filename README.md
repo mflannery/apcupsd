@@ -24,7 +24,9 @@ You should see output similar to the following:
 
 ```
   $ sudo systemctl status apcupsd.service 
-● apcupsd.service - APC UPS Power Control Daemon for Linux
+```  
+```
+  ● apcupsd.service - APC UPS Power Control Daemon for Linux
      Loaded: loaded (/usr/lib/systemd/system/apcupsd.service; enabled; vendor p>
      Active: active (running) since Sun 2022-01-23 13:51:56 EST; 7min ago
     Process: 1415535 ExecStartPre=/bin/rm -f /etc/apcupsd/powerfail (code=exite>
@@ -40,6 +42,8 @@ Now that apcupsd is running check the status:
 
 ```
     $ apcaccess status
+```
+```
     APC      : 001,036,0879
     DATE     : 2022-01-23 14:01:48 -0500  
     HOSTNAME : fedora
