@@ -77,3 +77,6 @@ Now that apcupsd is running check the status:
     NOMPOWER : 900 Watts
     FIRMWARE : 957.e3 .D USB FW:e3
     END APC  : 2022-01-23 14:01:52 -0500
+```
+This server will now shutdown if the batter power level goes below 5% or 3 minutes of run time.  
+I have added a doshutdown script that will turn off my synology server as well as my fedora server in the event the battery runs out of power. Copy doshutdown to /etc/apcpusd and edit as appropriate.  
