@@ -1,0 +1,14 @@
+#!/usr/bin/sh
+#
+# This shell script if placed in /etc/apcupsd
+# will be called by /etc/apcupsd/apccontrol when the UPS
+# battery limit has been reached and we need to 
+# perform a graceful shutdown before the battery
+# runs out of power. Exit 99 to stop any further processing
+# in apccontrol
+#
+
+ssh <CHANGE-ME user@server> sudo poweroff
+sleep 10
+poweroff
+exit 99
