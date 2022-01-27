@@ -70,4 +70,4 @@ apcaccess status
     END APC  : 2022-01-23 14:01:52 -0500
 ```
 This server will now shutdown if the batter power level goes below 5% or 3 minutes of run time.  
-I have added a doshutdown script that will turn off my synology server as well as my fedora server in the event the battery runs out of power. Copy doshutdown to /etc/apcpusd and edit as appropriate.  
+I have added a doshutdown script to this repository that will turn off my synology server as well as my fedora server in the event the battery runs out of power. Copy doshutdown to /etc/apcpusd and edit as appropriate.  
